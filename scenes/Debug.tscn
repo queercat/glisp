@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddfrdio28o4eu"]
+
+[ext_resource type="Script" path="res://scripts/debug_script.gd" id="1_l7rrc"]
+[ext_resource type="FontFile" uid="uid://ca8qcpscpxpbu" path="res://fonts/DinaRemasterII.ttc" id="2_5m0v3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_l7rrc")
+
+[node name="CodeEdit" type="CodeEdit" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = 11.0
+offset_right = -294.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_5m0v3")
+symbol_lookup_on_click = true
+code_completion_enabled = true
+indent_size = 2
+indent_automatic_prefixes = Array[String](["("])
+
+[node name="CodeEdit2" type="CodeEdit" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 871.0
+offset_top = 93.0
+offset_right = -17.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_5m0v3")
+editable = false
+symbol_lookup_on_click = true
+code_completion_enabled = true
+indent_size = 2
+indent_automatic_prefixes = Array[String](["("])
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 870.0
+offset_top = 8.0
+offset_right = 1133.0
+offset_bottom = 76.0
+theme_override_colors/font_hover_color = Color(0.521141, 0.521141, 0.521141, 1)
+text = "Run"
